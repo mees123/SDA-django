@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h1>Welcome to HollyMovies!</h1>
+  {% for adj in adjectives %}
+    {% if adj != 'cruel' %}
+      <p>This is a {{ adj }} world...</p>
+    {% endif %}
+  {% endfor %}
+
+  <div class=jumbotron" style="background-color: red;">
+    {% block content_2 %}
+    {% endblock %}
+  </div>
+
+{% endblock %}
+
+
+
+
+
